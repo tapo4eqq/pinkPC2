@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сборки в наличии - IntelligentPC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="back-to-home">
+            <a href="index.html"><i class="fas fa-arrow-left"></i> На главную</a>
+        </div>
+        <div class="header-container">
+            <div class="logo">IntelligentPC</div>
+            <div class="header-right">
+                <div class="contact-info">
+                    <i class="fas fa-phone-alt"></i> +7 (962) 910-91-44
+                </div>
+                <nav>
+                    <a href="support.html"><i class="fas fa-headset"></i> Поддержка</a>
+                    <a href="servers.html"><i class="fas fa-server"></i> Серверы</a>
+                    <a href="services.html"><i class="fas fa-cogs"></i> Услуги</a>
+                    <a href="#cart" class="cart-link"><i class="fas fa-shopping-cart"></i> Корзина</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="cart-sidebar" id="cart">
+        <div class="cart-header">
+            <h3>Ваша корзина</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <ul class="cart-items" id="cart-items"></ul>
+        <div class="cart-total" id="cart-total">Итого: 0 руб.</div>
+        <button id="clear-cart-button" class="clear-cart" style="display: none;">
+            Очистить корзину
+        </button>
+    </div>
+<div class="content-wrapper">
+    <main class="prebuilt-page">
+        <div class="page-header">
+            <h2 class="page-title">Сборки в наличии</h2>
+            <div class="page-description">Готовые решения для любых задач</div>
+        </div>
+        
+        <div class="products-container">
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="pic/2-3.jpg" alt="Игровой компьютер Молния" class="product-image">
+                        <div class="availability in-stock">В наличии</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Игровой компьютер "Молния"</h3>
+                        <div class="price-container">
+                            <span class="main-price">120 000 руб.</span>
+                            <span class="installment">или 10 000 руб./мес</span>
+                        </div>
+                        <button class="buy-btn" 
+                                data-id="prebuilt-1" 
+                                data-name="Игровой компьютер 'Молния'" 
+                                data-price="120000">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="pic/2-3.jpg" alt="Рабочая станция Титан" class="product-image">
+                        <div class="availability in-stock">В наличии</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Рабочая станция "Титан"</h3>
+                        <div class="price-container">
+                            <span class="main-price">180 000 руб.</span>
+                            <span class="installment">или 15 000 руб./мес</span>
+                        </div>
+                        <button class="buy-btn" 
+                                data-id="prebuilt-2" 
+                                data-name="Рабочая станция 'Титан'" 
+                                data-price="180000">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="pic/hyperpc-dynamic-evo-rgb-black.png" alt="Бюджетный компьютер Эконом" class="product-image">
+                        <div class="availability in-stock">В наличии</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Бюджетный компьютер "Эконом"</h3>
+                        <div class="price-container">
+                            <span class="main-price">60 000 руб.</span>
+                            <span class="installment">или 5 000 руб./мес</span>
+                        </div>
+                        <button class="buy-btn" 
+                                data-id="prebuilt-3" 
+                                data-name="Бюджетный компьютер 'Эконом'" 
+                                data-price="60000">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="pic/aligator.png" alt="Компьютер для стриминга Поток" class="product-image">
+                        <div class="availability in-stock">В наличии</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Компьютер для стриминга "Поток"</h3>
+                        <div class="price-container">
+                            <span class="main-price">150 000 руб.</span>
+                            <span class="installment">или 12 500 руб./мес</span>
+                        </div>
+                        <button class="buy-btn" 
+                                data-id="prebuilt-4" 
+                                data-name="Компьютер для стриминга 'Поток'" 
+                                data-price="150000">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="pic/875d57be750dcfdacc84da705edc5c65.png" alt="Мини-ПК Компакт" class="product-image">
+                        <div class="availability in-stock">В наличии</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Мини-ПК "Компакт"</h3>
+                        <div class="price-container">
+                            <span class="main-price">80 000 руб.</span>
+                            <span class="installment">или 6 666 руб./мес</span>
+                        </div>
+                        <button class="buy-btn" 
+                                data-id="prebuilt-5" 
+                                data-name="Мини-ПК 'Компакт'" 
+                                data-price="80000">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    </div>
+
+    <script>
+        document.getElementById('cart-toggle').addEventListener('click', (e) => {
+            e.preventDefault();
+            document.getElementById('cart').classList.add('active');
+        });
+
+        document.querySelector('.close-cart').addEventListener('click', () => {
+            document.getElementById('cart').classList.remove('active');
+        });
+    </script>
+    <script src="korzina.js"></script>
+</body>
+</html>

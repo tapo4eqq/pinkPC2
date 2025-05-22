@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntelligentPC - Сборка компьютеров на заказ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">IntelligentPC</div>
+            <div class="header-right">
+                <div class="contact-info">
+                    <i class="fas fa-phone-alt"></i> +7 (962) 910-91-44
+                    <span class="address"><i class="fas fa-map-marker-alt"></i> г.Москва, Ленинский проспект 45</span>
+                </div>
+                <nav>
+                    <a href="support.html"><i class="fas fa-headset"></i> Поддержка</a>
+                    <a href="servers.html"><i class="fas fa-server"></i> Серверы</a>
+                    <a href="services.html"><i class="fas fa-cogs"></i> Услуги</a>
+                    <a href="#cart" class="cart-link"><i class="fas fa-shopping-cart"></i> Корзина</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="left-column">
+            <div class="category-block">
+                <h3><i class="fas fa-desktop"></i> Сборки компьютеров</h3>
+                <ul>
+                    <li><a href="config.html"><i class="fas fa-sliders-h"></i> Конфигуратор</a></li>
+                    <li><a href="sborki v nalichii.html"><i class="fas fa-box-open"></i> Сборки в наличии</a></li>
+                </ul>
+            </div>
+
+            <div class="category-block">
+                <h3><i class="fas fa-filter"></i> Подобрать под</h3>
+                <ul>
+                    <li><a href="gaming.html"><i class="fas fa-gamepad"></i> Под игры</a></li>
+                    <li><a href="school.html"><i class="fas fa-book"></i> Под учебу</a></li>
+                    <li><a href="streaming.html"><i class="fas fa-video"></i> Для стриминга</a></li>
+                </ul>
+            </div>
+
+            <div class="category-block">
+                <h3><i class="fas fa-ruble-sign"></i> Подобрать по цене</h3>
+                <ul>
+                    <li><a href="upto150k.html">до 150.000 ₽</a></li>
+                    <li><a href="upto250k.html">до 250.000 ₽</a></li>
+                    <li><a href="upto500k.html">до 500.000 ₽</a></li>
+                    <li><a href="upto750k.html">до 750.000 ₽</a></li>
+                    <li><a href="upto1m.html">до 1.000.000 ₽</a></li>
+                    <li><a href="overto1m.html">свыше 1.000.000 ₽</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <section class="hero">
+                <h1>Соберите компьютер своей мечты</h1>
+                <p>Индивидуальные сборки для любых задач с гарантией качества</p>
+                <a href="config.html" class="cta-button">Начать сборку</a>
+            </section>
+
+            <section class="features">
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Гарантия 3 года</h3>
+                    <p>На все сборки предоставляется расширенная гарантия</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Быстрая доставка</h3>
+                    <p>По Москве - за 1 день, по России - от 3 дней</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-cog"></i>
+                    <h3>Индивидуальный подход</h3>
+                    <p>Соберем ПК именно под ваши требования</p>
+                </div>
+            </section>
+
+            <div class="services-block">
+                <h2 class="section-title">Популярные категории</h2>
+                <a href="gaming.html" class="service-item-link">
+                    <div class="service-item">
+                        <img src="pic/aligator.png" alt="Для игр">
+                        <div class="service-info">
+                            <h3>Игровые компьютеры</h3>
+                            <p>Мощные сборки для комфортной игры в любые современные игры</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="school.html" class="service-item-link">
+                    <div class="service-item">
+                        <img src="pic/forhome.png" alt="Для учебы">
+                        <div class="service-info">
+                            <h3>Для учебы и работы</h3>
+                            <p>Надежные компьютеры для продуктивной работы и обучения</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="config.html" class="service-item-link">
+                    <div class="service-item">
+                        <img src="pic/confindex.png" alt="Настройка конфигурации">
+                        <div class="service-info">
+                            <h3>Конфигуратор</h3>
+                            <p>Создайте свою уникальную конфигурацию компьютера</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Корзина -->
+        <aside id="cart">
+            <h2><i class="fas fa-shopping-cart"></i> Корзина</h2>
+            <ul id="cart-items">
+                <!-- Здесь будут добавляться товары -->
+            </ul>
+            <div id="cart-total">
+                Итого: 0 руб.
+            </div>
+            <button id="clear-cart-button">Очистить корзину</button>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p><i class="fas fa-phone-alt"></i> +7 (962) 910-91-44</p>
+                <p><i class="fas fa-map-marker-alt"></i> г.Москва, Ленинский проспект 45</p>
+                <p><i class="fas fa-clock"></i> Пн-Пт: 10:00 - 20:00</p>
+            </div>
+            <div class="footer-section">
+                <h3>Меню</h3>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="config.html">Конфигуратор</a></li>
+                    <li><a href="servers.html">Серверы</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Соцсети</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="https://t.me/magnoliagod"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div id="counter">Количество посещений: Загрузка...</div>
+            <div class="copyright">© 2025 IntelligentPC. Все права защищены.</div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+        // Счетчик посещений
+        let visitCount = localStorage.getItem('visitCount');
+        if (!visitCount) visitCount = 1;
+        else visitCount = parseInt(visitCount) + 1;
+        localStorage.setItem('visitCount', visitCount);
+        document.getElementById('counter').textContent = `Посетителей: ${visitCount}`;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поддержка - IntelligentPC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="back-to-home">
+            <a href="index.html"><i class="fas fa-arrow-left"></i> На главную</a>
+        </div>
+        <div class="header-container">
+            <div class="logo">IntelligentPC</div>
+            <div class="header-right">
+                <div class="contact-info">
+                    <i class="fas fa-phone-alt"></i> +7 (962) 910-91-44
+                </div>
+                <nav>
+                    <a href="support.html"><i class="fas fa-headset"></i> Поддержка</a>
+                    <a href="servers.html"><i class="fas fa-server"></i> Серверы</a>
+                    <a href="services.html"><i class="fas fa-cogs"></i> Услуги</a>
+                    <a href="#cart" class="cart-link"><i class="fas fa-shopping-cart"></i> Корзина</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="support.html">Поддержка</a>
+        <a href="servers.html">Серверы</a>
+        <a href="services.html">Услуги</a>
+    </nav>
+
+    <main>
+        <div class="right-column">
+            <h2 class="page-title">Поддержка</h2>
+            <div class="content-section">
+                <p>Здесь будет информация о технической поддержке, ответы на часто задаваемые вопросы и контактная форма...</p>
+            </div>
+        </div>
+        <div class="right-column">
+            <h2 class="page-title">Обратная связь</h2>
+            <div class="content-section">
+                <p>Пожалуйста, заполните форму ниже, чтобы связаться с нами:</p>
+                <form
+  action="https://formspree.io/f/mzzrjzpq"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+                <div id="form-result"></div>
+            </div>
+        </div>
+
+        <div class="back-to-home">
+            <a href="index.html">На главную</a>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

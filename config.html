@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конфигуратор ПК - IntelligentPC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="back-to-home">
+            <a href="index.html"><i class="fas fa-arrow-left"></i> На главную</a>
+        </div>
+        <div class="header-container">
+            <div class="logo">IntelligentPC</div>
+            <div class="header-right">
+                <div class="contact-info">
+                    <i class="fas fa-phone-alt"></i> +7 (962) 910-91-44
+                </div>
+                <nav>
+                    <a href="support.html"><i class="fas fa-headset"></i> Поддержка</a>
+                    <a href="servers.html"><i class="fas fa-server"></i> Серверы</a>
+                    <a href="services.html"><i class="fas fa-cogs"></i> Услуги</a>
+                    <a href="#cart" class="cart-link"><i class="fas fa-shopping-cart"></i> Корзина</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+ 
+
+    <div class="container">
+        <h1 class="page-title">Конфигуратор сборки компьютера</h1>
+        
+        <div class="configurator">
+            <div class="components-section">
+                <div class="component-category">
+                    <h2><i class="fas fa-microchip"></i> Процессор</h2>
+                    <select id="cpu-select">
+                        <option value="" disabled selected>Выберите процессор</option>
+                        <!-- Опции будут заполняться через JS -->
+                    </select>
+                </div>
+
+                <div class="component-category">
+                    <h2><i class="fas fa-microchip"></i> Материнская плата</h2>
+                    <select id="mobo-select">
+                        <option value="" disabled selected>Выберите материнскую плату</option>
+                    </select>
+                </div>
+
+                <div class="component-category">
+                    <h2><i class="fas fa-gamepad"></i> Видеокарта</h2>
+                    <select id="gpu-select">
+                        <option value="" disabled selected>Выберите видеокарту</option>
+                    </select>
+                </div>
+
+                <div class="component-category">
+                    <h2><i class="fas fa-memory"></i> Оперативная память</h2>
+                    <select id="ram-select">
+                        <option value="" disabled selected>Выберите оперативную память</option>
+                    </select>
+                </div>
+
+                <div class="component-category">
+                    <h2><i class="fas fa-hdd"></i> Накопитель</h2>
+                    <select id="storage-select">
+                        <option value="" disabled selected>Выберите накопитель</option>
+                    </select>
+                </div>
+
+                <div class="component-category">
+                    <h2><i class="fas fa-plug"></i> Блок питания</h2>
+                    <select id="psu-select">
+                        <option value="" disabled selected>Выберите блок питания</option>
+                    </select>
+                </div>
+
+                <div class="component-category">
+                    <h2><i class="fas fa-desktop"></i> Корпус</h2>
+                    <select id="case-select">
+                        <option value="" disabled selected>Выберите корпус</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="summary-section">
+                <h2><i class="fas fa-list"></i> Ваша сборка</h2>
+                <div id="build-summary">
+                    <p>Выберите компоненты для отображения сборки</p>
+                </div>
+                <div class="total-price">
+                    <h3>Итого: <span id="total-price">0</span> ₽</h3>
+                </div>
+                <button id="save-build"><i class="fas fa-save"></i> Сохранить сборку</button>
+                <div id="saved-builds">
+                    <h3><i class="fas fa-bookmark"></i> Сохранённые сборки</h3>
+                    <ul id="saved-builds-list"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="summary-actions">
+    <button id="save-build"><i class="fas fa-save"></i> Сохранить</button>
+    <button id="buy-build" class="buy-button"><i class="fas fa-shopping-cart"></i> Купить сборку</button>
+</div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p><i class="fas fa-phone-alt"></i> +7 (962) 910-91-44</p>
+                <p><i class="fas fa-map-marker-alt"></i> г.Москва, Ленинский проспект 45</p>
+                <p><i class="fas fa-clock"></i> Пн-Пт: 10:00 - 20:00</p>
+            </div>
+            <div class="footer-section">
+                <h3>Меню</h3>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="config.html">Конфигуратор</a></li>
+                    <li><a href="servers.html">Серверы</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Соцсети</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="copyright">© 2025 IntelligentPC. Все права защищены.</div>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+</body>
+</html>
